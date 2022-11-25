@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="org.example.springBootTutorial.Student" name="student1">
+        <!--    Value as a value -->
+        <!--    <property name="studentId">-->
+        <!--        <value>123</value>-->
+        <!--    </property>-->
+        <!--    <property name="studentName">-->
+        <!--        <value>Satis Kumar Chaudhary</value>-->
+        <!--    </property>-->
+        <!--    <property name="studentAddress">-->
+        <!--        <value>Jhumka Sunsari</value>-->
+        <!--    </property>-->
+
+    </bean>
+    <bean class="org.example.collections.Emp" name="emp1">
+        <!--    Value as a Attribute -->
+        <property name="name" value="Satis kumar chaudhary"/>
+
+        <property name="Phone">
+            <list>
+                <value>12131313</value>
+                <value>09209234923</value>
+                <value>2323234</value>
+            </list>
+        </property>
+
+        <property name="address">
+            <set><value>jhumka</value>
+                <value>ktm</value>
+                <value>ithari</value>
+            </set>
+        </property>
+        <property name="courses">
+            <map>
+                <entry key="python" value="python"/>
+                <entry key="java" value="java"/>
+                <entry key="javascript" value="javascript"/>
+            </map>
+        </property>
+
+
+    </bean>
+</beans>
