@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context = "http://www.springframework.org/schema/context"
+xmlns:util = "http://www.springframework.org/schema/util"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd
+ http://www.springframework.org/schema/util
+   http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!--standalone list-->
+    <util:list list-class="java.util.LinkedList" id="epmName">
+        <value>Satis</value>
+        <value>Soman</value>
+        <value>Toran</value>
+        <value>Yogesh</value>
+    </util:list>
+
+    <util:map map-class="java.util.HashMap" id="cors">
+        <entry key="java" value="1"/>
+        <entry key="django" value="2"/>
+        <entry key="react" value="3"/>
+        <entry key="spring" value="4"/>
+    </util:map>
+
+    <bean class="org.example.standaloneCollection.Employee" name="emp">
+        <!--        <property name="EmpName">-->
+        <!--            <ref bean="empName"/>-->
+        <!--        </property>-->
+
+        <property name="EpmName" ref="epmName"/>
+        <property name="courses" ref="cors"/>
+    </bean>
+
+
+</beans>
