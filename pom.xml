@@ -23,19 +23,24 @@
 <!--            <artifactId>spring-core</artifactId>-->
 <!--            <version>6.0.0</version>-->
 <!--        </dependency>-->
-
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.2</version>
-            <scope>test</scope>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>6.0.2</version>
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>junit</groupId>-->
+<!--            <artifactId>junit</artifactId>-->
+<!--            <version>3.8.2</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>${org.springframework.version}</version>
-
+            <version>6.0.2</version>
         </dependency>
 
         <dependency>
