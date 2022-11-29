@@ -1,13 +1,15 @@
 package org.example.stereotypeAnnotation;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component("obj")
+@Scope("prototype")
 public class Student {
-    @Value("sudhir")
+    @Value("#{1+2}")
     private  String StudentName;
-    @Value("Bhadhgaun")
+    @Value("#{'Bhadhgaun'}")
     private String City;
 
     @Override
